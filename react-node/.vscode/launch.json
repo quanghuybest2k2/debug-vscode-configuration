@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ReactJS",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/frontend/src",
+            "sourceMaps": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Express TS",
+            "program": "${workspaceFolder}/backend/dist/index.js",
+            "cwd": "${workspaceFolder}/backend",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
